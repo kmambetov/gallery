@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="{{ url_for('receiver') }}" method="POST">
+        <input type="text" name="url" placeholder="URL изображения">
+        <button>Добавить</button>
+    </form>
+{% endblock %}
