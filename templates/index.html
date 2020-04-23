@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Все картинки</h1>
+
+    <div>
+        {% for url in urls %}
+            <div>
+                <img src="{{ url }}">
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
